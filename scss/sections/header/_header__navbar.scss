@@ -1,0 +1,94 @@
+// HEADER
+
+
+//Navegador
+
+// Para que el Logo y el Botón hamburguesa estén centrados uno encima del otro
+// Modificación a la class="container-fluid" del Bootstrap CSS
+.container-fluid {
+    display: flex;
+        justify-content: center;
+
+    // =========================
+
+    // Logo
+
+    // =========================
+
+    // Botón hamburguesa
+
+    // Modificación a la class="navbar-toggler" del Bootstrap CSS
+    .navbar-toggler {
+        border-color: transparent;
+    }
+
+    // =========================
+
+    //Menú y Tienda
+
+    .navbar-collapse {
+
+        // ==========
+
+        // Declaro un mixin con variables
+        @mixin styles__header-navbar($border-color, $middle-color) {
+            background: $border-color;
+            background: linear-gradient(90deg, $border-color 0%, $middle-color 5%, $middle-color 95%, $border-color 100%);
+            text-align: center;
+        }
+
+        // Declaro un mixin sin variables
+        @mixin styles__header-navbar__item-link {
+            font-family: $font-family__menu; // Esta no es una variable creada para este mixin específico (aquí funciona como un dato fijo), es una variable creada en el archivo _vars__font-family.scss
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        // Declaro un mixin con variable
+        @mixin styles__header-navbar__item-link--hover($middle-color) {
+            background: transparent;
+            background: linear-gradient(90deg, transparent 0%, $middle-color 5%, $middle-color 95%, transparent 100%);
+        }
+
+        // =====
+
+        // Menú
+
+        .header-navbar__menu {
+            @include styles__header-navbar($color-palette-1, $color-palette-5); // Aplico el mixin con variables
+
+            .header-navbar__menu--item {
+
+                .header-navbar__menu--item-link {
+                    @include styles__header-navbar__item-link; // Aplico el mixin sin variables
+
+                    &:hover {
+                        @include styles__header-navbar__item-link--hover($color-palette-5__variant); // Aplico el mixin con variable
+                    }
+                }
+            }
+        }
+
+        // =====
+
+        // Tienda
+
+        .header-navbar__shop {
+            @include styles__header-navbar($color-palette-1, $color-palette-4); // Aplico el mixin con variables
+
+            .header-navbar__shop--item {
+
+                .header-navbar__shop--item-link {
+                    @include styles__header-navbar__item-link; // Aplico el mixin sin variables
+                    color: $color-palette-6;
+
+                    &:hover {
+                        @include styles__header-navbar__item-link--hover($color-palette-4__variant); // Aplico el mixin con variable
+                        color: white;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}

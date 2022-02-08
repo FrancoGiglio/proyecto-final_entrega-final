@@ -1,0 +1,29 @@
+// MAIN DE LA PÁGINA WEB DE INICIO
+
+
+// Noticias cortas
+.main-home__short-news {
+
+    .main-home__short-news--articles {
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+
+        // Modificación a la class="card" del Bootstrap CSS
+        .card {
+            margin: 20px;
+            background-color: $color-palette-3;
+            border: 10px inset $color-palette-5;
+            width: 18rem;
+
+            .card-body {
+
+                .card__date {
+                    font-size: 0.85rem;
+                    color: $color-palette-6;
+                }
+            }
+        }
+    }
+}

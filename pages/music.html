@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Página en español -->
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Prompt:ital,wght@1,700&family=Yellowtail&display=swap" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- wow.js (Enlace a la biblioteca de animación CSS) -->
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/icons/favicon/favicon.ico" type="image/x-icon"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+
+    <!-- S.E.O. --> <!-- Diferente en TODAS las páginas del sitio web -->
+    <title>
+        John Mayer | Música
+    </title>
+    <meta name="description" content="Conoce todo los álbumes de estudio de John Mayer, escucha sus canciones, averigua cuándo fueron lanzados, a qué sello pertenecen y en qué formatos los puedes encontrar; relajate y disfruta junto a tu artista.">
+    <meta name="keywords" content="John, Clayton, Mayer, John Mayer, John Clayton Mayer, artista, cantante, compositor, productor, música, musica, discografía, discografia, álbum, album, Sob Rock, The Search for Everything, Paradise Valley, Born and Raised, Battle Studies, Continuum, Heavier Things, Room for Squares">
+
+</head>
+
+
+
+<body>
+
+
+    <div class="general-grid">
+
+
+    <!-- ========================= -->
+
+
+        <header class="header">
+
+            <!-- Navegador de la página -->
+            <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Elimino la/s clase/s de Bootstrap: bg-light --> <!-- Reemplazo la clase de Bootstrap "navbar-light" por "navbar-dark" para que las letras sean blancas por defecto -->
+
+                <div class="container-fluid"> <!-- width: 100% en todos los breakpoints -->
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="../index.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        <h1 class="wow animate__animated animate__pulse animate__repeat-2" data-wow-duration="2s" data-wow-delay="2s"> <!-- "animate__repeat-2" es una class de Animate.css // "data-wow-duration" y "data-wow-delay" son atributos de wow.js -->
+                            John Mayer
+                        </h1>
+                    </a>
+
+                    <!-- Botón hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menú y Tienda -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <!-- Menú -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header-navbar__menu"> <!-- Reemplazo la clase de Bootstrap "me-auto" por "ms-auto" para que el Menú quede al medio -->
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="../index.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="./biography.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                                    Biografía
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link active header-navbar__menu--item-link" aria-current="page" href="./music.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) --> <!-- Enlace ACTIVO -->
+                                    Música
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="./media.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                                    Media
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="./contact.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Tienda -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header-navbar__shop"> <!-- Puesto como "Lista desordenada" por si en el futuro se quiere agregar otro botón a un enlace externo --> <!-- Reemplazo la clase de Bootstrap "me-auto" por "ms-auto" para que la Tienda quede pegada al margen derecho -->
+                            <li class="nav-item header-navbar__shop--item">
+                                <a class="nav-link header-navbar__shop--item-link" href="https://johnmayerstore.com/" target="_blank">
+                                    Tienda
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <!-- ========== -->
+
+
+        <!-- Música -->
+        <main class="main main-music">
+
+            <!-- Discografía -->
+            <section class="container main-music__discography">
+
+                <h2 class="main-music__discography--title wow animate__animated animate__fadeInUp">
+                    Discografía
+                </h2>
+
+                <!-- Álbumes de estudio -->
+                <div class="studio-albums">
+
+                    <!-- Álbumes de estudio Nº8 -->
+                    <div class="studio-albums__card">
+                        <h3 class="studio-albums__card--title">
+                            Sob Rock
+                        </h3>
+                        <div class="studio-albums__card--top">
+                            <img class="studio-albums__card--cover" src="../assets/images/studio-albums/8_sob-rock.jpg" alt="Tapa de Sob Rock">
+                            <ul class="studio-albums__card--data">
+                                <li>
+                                    <p>
+                                        <strong>Lanzado:</strong> 16 de julio de 2021 (EE.UU.)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Sello:</strong> Columbia
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Formato/s:</strong> LP, CD, descarga digital
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <iframe src="https://open.spotify.com/embed/album/2JmfwvRDitJlTUoLCkp61z?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            Sob Rock desde Spotify
+                        </iframe>
+                    </div>
+
+                    <!-- Álbumes de estudio Nº7 -->
+                    <div class="studio-albums__card">
+                        <h3 class="studio-albums__card--title">
+                            The Search for Everything
+                        </h3>
+                        <div class="studio-albums__card--top">
+                            <img class="studio-albums__card--cover" src="../assets/images/studio-albums/7_the-search-for-everything.jpg" alt="Tapa de The Search for Everything">
+                            <ul class="studio-albums__card--data">
+                                <li>
+                                    <p>
+                                        <strong>Lanzado:</strong> 14 de abril de 2017 (EE.UU.)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Sello:</strong> Columbia
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Formato/s:</strong> LP, CD, descarga digital
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <iframe src="https://open.spotify.com/embed/album/0jZFu2tihRJ65iYAo0oOtP?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            The Search for Everything desde Spotify
+                        </iframe>
+                    </div>
+
+                    <!-- Álbumes de estudio Nº6 -->
+                    <div class="studio-albums__card">
+                        <h3 class="studio-albums__card--title">
+                            Paradise Valley
+                        </h3>
+                        <div class="studio-albums__card--top">
+                            <img class="studio-albums__card--cover" src="../assets/images/studio-albums/6_paradise-valley.jpg" alt="Tapa de Room for Squares">
+                            <ul class="studio-albums__card--data">
+                                <li>
+                                    <p>
+                                        <strong>Lanzado:</strong> 20 de agosto de 2013 (EE.UU.)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Sello:</strong> Columbia
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Formato/s:</strong> LP, CD, descarga digital
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <iframe src="https://open.spotify.com/embed/album/712VoD72K500yLhhgqCyVe?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            Paradise Valley desde Spotify
+                        </iframe>
+                    </div>
+
+                    <!-- Álbumes de estudio Nº5 -->
+                    <div class="studio-albums__card">
+                        <h3 class="studio-albums__card--title">
+                            Born and Raised
+                        </h3>
+                        <div class="studio-albums__card--top">
+                            <img class="studio-albums__card--cover" src="../assets/images/studio-albums/5_born-and-raised.jpg" alt="Tapa de Born and Raised">
+                            <ul class="studio-albums__card--data">
+                                <li>
+                                    <p>
+                                        <strong>Lanzado:</strong> 22 de mayo de 2012 (EE.UU.)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Sello:</strong> Columbia
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Formato/s:</strong> LP, CD, descarga digital
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <iframe src="https://open.spotify.com/embed/album/6S0BIiWtnqU0PtumXMpin0?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            Born and Raised desde Spotify
+                        </iframe>
+                    </div>
+
+                    <!-- Álbumes de estudio Nº4 -->
+                    <div class="studio-albums__card">
+                        <h3 class="studio-albums__card--title">
+                            Battle Studies
+                        </h3>
+                        <div class="studio-albums__card--top">
+                            <img class="studio-albums__card--cover" src="../assets/images/studio-albums/4_battle-studies.jpg" alt="Tapa de Battle Studies">
+                            <ul class="studio-albums__card--data">
+                                <li>
+                                    <p>
+                                        <strong>Lanzado:</strong> 17 de noviembre de 2009 (EE.UU.)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Sello:</strong> Columbia
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Formato/s:</strong> LP, CD, descarga digital
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <iframe src="https://open.spotify.com/embed/album/1V5vQRMWTNGmqwxY8jMVou?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            Battle Studies desde Spotify
+                        </iframe>
+                    </div>
+
+                    <!-- Álbumes de estudio Nº3 -->
+                    <div class="studio-albums__card">
+                        <h3 class="studio-albums__card--title">
+                            Continuum
+                        </h3>
+                        <div class="studio-albums__card--top">
+                            <img class="studio-albums__card--cover" src="../assets/images/studio-albums/3_continuum.jpg" alt="Tapa de Continuum">
+                            <ul class="studio-albums__card--data">
+                                <li>
+                                    <p>
+                                        <strong>Lanzado:</strong> 12 de septiembre de 2006 (EE.UU.)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Sello:</strong> Columbia
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Formato/s:</strong> LP, CD, descarga digital
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <iframe src="https://open.spotify.com/embed/album/1Xsprdt1q9rOzTic7b9zYM?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            Continuum desde Spotify
+                        </iframe>
+                    </div>
+
+                    <!-- Álbumes de estudio Nº2 -->
+                    <div class="studio-albums__card">
+                        <h3 class="studio-albums__card--title">
+                            Heavier Things
+                        </h3>
+                        <div class="studio-albums__card--top">
+                            <img class="studio-albums__card--cover" src="../assets/images/studio-albums/2_heavier-things.jpg" alt="Tapa de Heavier Things">
+                            <ul class="studio-albums__card--data">
+                                <li>
+                                    <p>
+                                        <strong>Lanzado:</strong> 9 de septiembre de 2003 (EE.UU.)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Sello:</strong> Columbia
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Formato/s:</strong> LP, CD, SACD, DualDisc, Cassette, descarga digital
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <iframe src="https://open.spotify.com/embed/album/6WivmTXugLZLmAWnZhlz7g?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            Heavier Things desde Spotify
+                        </iframe>
+                    </div>
+
+                    <!-- Álbumes de estudio Nº1 -->
+                    <div class="studio-albums__card">
+                        <h3 class="studio-albums__card--title">
+                            Room for Squares
+                        </h3>
+                        <div class="studio-albums__card--top">
+                            <img class="studio-albums__card--cover" src="../assets/images/studio-albums/1_room-for-squares.jpg" alt="Tapa de Room for Squares">
+                            <ul class="studio-albums__card--data">
+                                <li>
+                                    <p>
+                                        <strong>Lanzado:</strong> 18 de septiembre de 2001 (EE.UU.)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Sello:</strong> Columbia
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Formato/s:</strong> LP, CD, SACD, DualDisc, Cassette, descarga digital
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <iframe src="https://open.spotify.com/embed/album/3yHOaiXecTJVUdn7mApZ48?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                            Room for Squares desde Spotify
+                        </iframe>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ========== -->
+
+
+        <!-- Pie de página -->
+        <footer class="footer">
+
+            <!-- Redes sociales -->
+            <div class="footer__social-media">
+                <ul class="footer__social-media--unordered-list">
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.facebook.com/johnmayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/facebook.svg" alt="Facebook"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://twitter.com/johnmayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/twitter.svg" alt="Twitter"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.instagram.com/johnmayer/" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/instagram.svg" alt="Instagram"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.tiktok.com/@johnmayer?" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/tiktok.svg" alt="TikTok"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.youtube.com/johnmayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/youtube.svg" alt="YouTube"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://open.spotify.com/artist/0hEurMDQu99nJRq8pTxO14" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/spotify.svg" alt="Spotify"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://music.apple.com/us/artist/john-mayer/472054" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/apple-music.svg" alt="Apple Music"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://music.amazon.com/artists/B000QJJQJQ/john-mayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/amazon-music.svg" alt="Amazon Music"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Legales -->
+            <div class="footer__legal">
+                <p>
+                    ©2021 John Mayer. Esta página es un Concept. Todos los derechos son propiedad de John Mayer.
+                </p>
+            </div>
+
+        </footer>
+
+
+    <!-- ========================= -->
+
+
+    </div>
+
+
+    <!-- ================================================== -->
+
+
+    <!-- wow.js (Vinculación y activación) -->
+    <script src="../js/wow.min.js"></script> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Popper y Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+
+</html>

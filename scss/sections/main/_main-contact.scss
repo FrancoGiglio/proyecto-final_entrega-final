@@ -1,0 +1,29 @@
+// MAIN DE LA PÁGINA WEB DE CONTACTO
+
+
+.main-contact {
+
+    .main-contact__form .form {
+        padding: 10px;
+        margin: 10px;
+        background-color: $color-palette-3;
+        border: 10px inset $color-palette-5;
+
+        span {
+            color: $color-palette-5__variant;
+        }
+
+        .form__sex--fieldset {
+            margin: 20px -15px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 20px 0 20px 20px;
+            font-family: $font-family__title;
+            color: white;
+            text-align: center;
+            background-color: $color-palette-5;
+        }
+    }
+}

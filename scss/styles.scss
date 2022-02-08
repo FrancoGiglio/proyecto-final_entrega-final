@@ -1,0 +1,61 @@
+// Variables
+@import "./vars/vars__font-family";
+@import "./vars/vars__font-size";
+@import "./vars/vars__color-palette";
+
+// =====
+
+//Restablecimiento del CSS
+@import "./normalize/reset";
+
+// ==========
+
+// Diseño base
+@import "./layout/grid";
+
+// Estilo base
+@import "./base/body";
+
+// =========================
+
+// Header
+@import "./sections/header/header";
+
+// =========================
+
+// Main
+
+// ==========
+
+// Main de la página web de Inicio
+@import "./sections/main/main-home";
+
+// ==========
+
+// Main de la página web de Biografía
+@import "./sections/main/main-biography";
+
+// ==========
+
+// Main de la página web de Música
+@import "./sections/main/main-music";
+
+// ==========
+
+// Main de la página web de Media
+@import "./sections/main/main-media";
+
+// ==========
+
+// Main de la página web de Contacto
+@import "./sections/main/main-contact";
+
+// =========================
+
+// Footer
+@import "./sections/footer/footer";
+
+// ==================================================
+
+// Media Queries
+@import "./media-queries/breakpoints";

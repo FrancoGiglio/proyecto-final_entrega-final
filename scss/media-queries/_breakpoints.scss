@@ -1,0 +1,173 @@
+// MEDIA QUERIES
+
+
+@media only screen and (min-width: 419px) and (max-width: 991px) {
+    // HEADER
+
+    //Navbar
+    // Para que el Logo y el Botón hamburguesa estén en los extremos de la pantalla
+    // Modificación a la class="container-fluid" del Bootstrap CSS
+    .navbar .container-fluid {
+        justify-content: space-between;
+
+        // Alternativa DESCARTADA
+        // Pone el Logo casi al medio de la página, pero no lo centra totalmente (porque está el Botón hamburguesa)
+        // Modificación a la class="navbar-brand" del Bootstrap CSS
+        //.navbar-brand {
+        //    margin: auto;
+        //}
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-home .main-home__short-news .main-home__short-news--articles .card {
+        width: 25rem;
+    }
+
+    .main-biography .main-biography__about {
+
+        .abstract .abstract__content .abstract__video {
+            margin: 0 20px 20px 0;
+            width: 50%; // Respecto de su caja padre
+            float: left;
+        }
+
+        .personal-life .personal-life__content .personal-life__image {
+            margin: 0 0 20px 20px;
+            width: 50%; // Respecto de su caja padre
+            float: right;
+        }
+    }
+
+    .main-media .main-media__new-videos .main-media__new-videos--body {
+        padding-bottom: 65%;
+    }
+
+    .footer .footer__social-media--unordered-list-item-link-icon {
+        width: 32px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    // HEADER
+
+    //Navbar
+
+    // Menú y Tienda
+
+    .navbar .container-fluid .navbar-collapse {
+
+        // ==========
+
+        // Centro los botones del Menú y de la "Lista desordenada" que incluye la Tienda (por si en el futuro se quiere agregar otro botón a un enlace externo)
+        // Modificación a la class="navbar-nav" del Bootstrap CSS
+        .navbar-nav {
+            justify-content: center; // No uso previamente "display: flex" porque Bootstrap CSS ya usa esta "propiedad: valor" en su clase
+        }
+
+        // =====
+
+        // Menú
+
+        .header-navbar__menu {
+            width: 85%;
+
+            .header-navbar__menu--item {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .main-media .main-media__new-photos .main-media__new-photos--image-gallery img {
+        width: 450px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .navbar .container-fluid .navbar-collapse .header-navbar__menu {
+        width: 75%;
+
+        .header-navbar__menu--item {
+            margin: 0 20px;
+        }
+    }
+
+    .main-home .main-home__tour .main-home__tour--body {
+
+        .main-home__tour--body-image {
+            display: inline-block;
+        }
+
+        .main-home__tour--body-download-button {
+            margin: 15px 0 0 0;
+        }
+    }
+
+    .main-biography .main-biography__about {
+
+        .abstract .abstract__content .abstract__video {
+            margin: 0 20px 20px 0;
+            width: 25%; // Respecto de su caja padre
+            float: left;
+        }
+
+        .personal-life .personal-life__content .personal-life__image {
+            margin: 0 0 20px 20px;
+            width: 25%; // Respecto de su caja padre
+            float: right;
+        }
+    }
+
+    .main-media .main-media__new-videos .main-media__new-videos--body {
+        padding-bottom: 60%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .navbar .container-fluid .navbar-collapse .header-navbar__menu {
+        width: 70%;
+
+        .header-navbar__menu--item {
+            margin: 0 25px;
+        }
+    }
+
+    .main-biography .main-biography__about {
+
+        .abstract .abstract__content .abstract__video {
+            margin: 0 20px 20px 0;
+            width: 17.5%; // Respecto de su caja padre
+            float: left;
+        }
+
+        .personal-life .personal-life__content .personal-life__image {
+            margin: 0 0 20px 20px;
+            width: 17.5%; // Respecto de su caja padre
+            float: right;
+        }
+    }
+
+    .main-media .main-media__new-videos .main-media__new-videos--body {
+        padding-bottom: 50%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .navbar .container-fluid .navbar-collapse .header-navbar__menu {
+        width: 50%;
+
+        .header-navbar__menu--item {
+            margin: 0 25px;
+        }
+    }
+
+    .main-home .main-home__short-news .main-home__short-news--articles .card {
+        width: 35rem;
+    }
+
+    .main-media .main-media__new-videos .main-media__new-videos--body {
+        padding-bottom: 40%;
+    }
+}

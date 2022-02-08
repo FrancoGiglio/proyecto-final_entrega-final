@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Página en español -->
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Prompt:ital,wght@1,700&family=Yellowtail&display=swap" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- wow.js (Enlace a la biblioteca de animación CSS) -->
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/icons/favicon/favicon.ico" type="image/x-icon"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+
+    <!-- S.E.O. --> <!-- Diferente en TODAS las páginas del sitio web -->
+    <title>
+        John Mayer | Contacto
+    </title>
+    <meta name="description" content="Ponte en contacto con John Mayer, haz preguntas sobre sus shows o déjanos tu opinión del sitio, este espacio es tuyo, nosotros te leemos.">
+    <meta name="keywords" content="John, Clayton, Mayer, John Mayer, John Clayton Mayer, artista, cantante, compositor, productor, contacto, comunicar, opinión, queja">
+
+</head>
+
+
+
+<body>
+
+
+    <div class="general-grid">
+
+
+    <!-- ========================= -->
+
+
+        <header class="header">
+
+            <!-- Navegador de la página -->
+            <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Elimino la/s clase/s de Bootstrap: bg-light --> <!-- Reemplazo la clase de Bootstrap "navbar-light" por "navbar-dark" para que las letras sean blancas por defecto -->
+
+                <div class="container-fluid"> <!-- width: 100% en todos los breakpoints -->
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="../index.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        <h1 class="wow animate__animated animate__pulse animate__repeat-2" data-wow-duration="2s" data-wow-delay="2s"> <!-- "animate__repeat-2" es una class de Animate.css // "data-wow-duration" y "data-wow-delay" son atributos de wow.js -->
+                            John Mayer
+                        </h1>
+                    </a>
+
+                    <!-- Botón hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menú y Tienda -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <!-- Menú -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header-navbar__menu"> <!-- Reemplazo la clase de Bootstrap "me-auto" por "ms-auto" para que el Menú quede al medio -->
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="../index.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="./biography.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                                    Biografía
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="./music.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                                    Música
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="./media.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                                    Media
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link active header-navbar__menu--item-link" aria-current="page" href="./contact.html"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) --> <!-- Enlace ACTIVO -->
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Tienda -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header-navbar__shop"> <!-- Puesto como "Lista desordenada" por si en el futuro se quiere agregar otro botón a un enlace externo --> <!-- Reemplazo la clase de Bootstrap "me-auto" por "ms-auto" para que la Tienda quede pegada al margen derecho -->
+                            <li class="nav-item header-navbar__shop--item">
+                                <a class="nav-link header-navbar__shop--item-link" href="https://johnmayerstore.com/" target="_blank">
+                                    Tienda
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <!-- ========== -->
+
+
+        <!-- Contacto -->
+        <main class="main main-contact">
+
+            <!-- Formulario -->
+            <section class="container main-contact__form"> <!-- Establece un max-width en cada responsive breakpoint -->
+
+                <h2 class="main-contact__form--title wow animate__animated animate__fadeInUp">
+                    Contacto
+                </h2>
+
+                <form class="row g-3 needs-validation form main-contact__form--body">
+
+                    <legend>
+                        <h3 class="form__title">
+                            Tus datos
+                        </h3>
+                    </legend>
+
+                    <div class="col-md-6 form__name">
+                        <label for="name" class="form-label form__name--label">
+                            Nombre/s<span>*</span>
+                        </label>
+                        <input type="text" class="form-control form__name--input" id="name" name="name" placeholder="Escribe tu/s nombre/s" required>
+                    </div>
+
+                    <div class="col-md-6 form__last-name">
+                        <label for="last_name" class="form-label form__last-name--label">
+                            Apellido/s<span>*</span>
+                        </label>
+                        <input type="text" class="form-control form__last-name--input" id="last_name" name="last_name" placeholder="Escribe tu/s apellido/s" required>
+                    </div>
+
+                    <div class="col-md-6 form__e-mail">
+                        <label for="e-mail" class="form-label form__e-mail--label">
+                            E-mail<span>*</span>
+                        </label>
+                        <input type="email" class="form-control form__e-mail--input" id="e-mail" name="e-mail" placeholder="Escribe tu e-mail" required>
+                    </div>
+
+                    <div class="col-12 form__address">
+                        <label for="address" class="form-label form__address--label">
+                            Dirección
+                        </label>
+                        <input type="text" class="form-control form__address--input" id="address" name="address" placeholder="Escribe tu dirección">
+                    </div>
+
+                    <div class="col-md-6 form__city">
+                        <label for="city" class="form-label form__city--label">
+                            Localidad<span>*</span>
+                        </label>
+                        <input type="text" class="form-control form__city--input" id="city" name="city" placeholder="Escribe tu localidad" required>
+                    </div>
+
+                    <div class="col-md-4 form__state">
+                        <label for="state" class="form-label form__state--label">
+                            Provincia<span>*</span>
+                        </label>
+                        <select id="state" class="form-select form__state--select" name="state" required>
+                            <option selected disabled value="">Elige tu provincia...</option>
+                            <option>Buenos Aires</option>
+                            <option>Capital Federal</option>
+                            <option>Catamarca</option>
+                            <option>Chaco</option>
+                            <option>Chubut</option>
+                            <option>Córdoba</option>
+                            <option>Corrientes</option>
+                            <option>Entre Ríos</option>
+                            <option>Formosa</option>
+                            <option>Jujuy</option>
+                            <option>La Pampa</option>
+                            <option>La Rioja</option>
+                            <option>Mendoza</option>
+                            <option>Misiones</option>
+                            <option>Neuquén</option>
+                            <option>Río Negro</option>
+                            <option>Salta</option>
+                            <option>San Juan</option>
+                            <option>San Luis</option>
+                            <option>Santa Cruz</option>
+                            <option>Santa Fe</option>
+                            <option>Santiago del Estero</option>
+                            <option>Tierra del Fuego</option>
+                            <option>Tucumán</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2 form__zip">
+                        <label for="zip" class="form-label form__zip--label">
+                            C.P.
+                        </label>
+                        <input type="text" class="form-control form__zip--input" id="zip" name="zip" placeholder="Escribe tu C.P.">
+                    </div>
+
+                    <div class="col-md-3 form__date-of-birth">
+                        <label for="fecha_de_nacimiento" class="form-label form__date-of-birth--label">
+                            Fecha de nacimiento<span>*</span>
+                        </label>
+                        <input type="date" class="form-control form__date-of-birth--input" id="fecha_de_nacimiento" name="fecha_de_nacimiento" required>
+                    </div>
+
+                    <fieldset class="row mb-3 form__sex--fieldset">
+                        <legend class="col-form-label col-sm-2 pt-0 form__sex--legend">
+                            Sexo<span>*</span>
+                        </legend>
+                        <div class="col-sm-10">
+                            <div class="form-check form__sex">
+                                <input class="form-check-input form__sex--input" type="radio" name="sexo" id="sexo1" value="mujer" required>
+                                <label class="form-check-label form__sex--label" for="sexo1">
+                                    Mujer
+                                </label>
+                            </div>
+                            <div class="form-check form__sex">
+                                <input class="form-check-input form__sex--input" type="radio" name="sexo" id="sexo2" value="hombre" required>
+                                <label class="form-check-label form__sex--label" for="sexo2">
+                                    Hombre
+                                </label>
+                            </div>
+                            <div class="form-check form__sex">
+                                <input class="form-check-input form__sex--input" type="radio" name="sexo" id="sexo3" value="otro" required>
+                                <label class="form-check-label form__sex--label" for="sexo3">
+                                    Otro
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <legend>
+                        <h3 class="form__title">
+                            Motivo de tu contacto
+                        </h3>
+                    </legend>
+
+                    <div class="col-md-6 form__subject">
+                        <label for="tema" class="form-label form__subject--label">
+                            Selecciona el tema por el que nos contactas<span>*</span>
+                        </label>
+                        <select id="tema" class="form-select form__subject--select" name="tema" required>
+                            <option selected disabled value="">Elige un tema...</option>
+                            <option>Para John</option>
+                            <option>Por los shows</option>
+                            <option>Por el sitio web</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 form__message">
+                        <label for="mensaje" class="form-label form__message--label">
+                            Escribe un mensaje<span>*</span>
+                        </label>
+                        <textarea class="form-control form__message--textarea" name="mensaje" id="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                    </div>
+
+
+                    <div class="col-12">
+                        <button type="submit" class="btn button">Enviar</button>
+
+                        <button type="reset" class="btn button">Borrar todo</button>
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+
+        <!-- ========== -->
+
+
+        <!-- Pie de página -->
+        <footer class="footer">
+
+            <!-- Redes sociales -->
+            <div class="footer__social-media">
+                <ul class="footer__social-media--unordered-list">
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.facebook.com/johnmayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/facebook.svg" alt="Facebook"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://twitter.com/johnmayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/twitter.svg" alt="Twitter"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.instagram.com/johnmayer/" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/instagram.svg" alt="Instagram"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.tiktok.com/@johnmayer?" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/tiktok.svg" alt="TikTok"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.youtube.com/johnmayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/youtube.svg" alt="YouTube"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://open.spotify.com/artist/0hEurMDQu99nJRq8pTxO14" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/spotify.svg" alt="Spotify"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://music.apple.com/us/artist/john-mayer/472054" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/apple-music.svg" alt="Apple Music"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://music.amazon.com/artists/B000QJJQJQ/john-mayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="../assets/icons/social-media/amazon-music.svg" alt="Amazon Music"> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Legales -->
+            <div class="footer__legal">
+                <p>
+                    ©2021 John Mayer. Esta página es un Concept. Todos los derechos son propiedad de John Mayer.
+                </p>
+            </div>
+
+        </footer>
+
+
+    <!-- ========================= -->
+
+
+    </div>
+
+
+    <!-- ================================================== -->
+
+
+    <!-- wow.js (Vinculación y activación) -->
+    <script src="../js/wow.min.js"></script> <!-- Enlace LOCAL (Diferente SÓLO en el Index) -->
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Popper y Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+
+</html>

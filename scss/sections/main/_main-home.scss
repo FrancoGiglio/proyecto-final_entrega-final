@@ -1,0 +1,16 @@
+// MAIN DE LA PÁGINA WEB DE INICIO
+
+
+.main-home {
+
+    // =====
+
+    // Carrusel de imágenes
+    @import "./main-home__carousel";
+
+    // Noticias cortas
+    @import "./main-home__short-news";
+
+    // Tour
+    @import "./main-home__tour";
+}

@@ -1,0 +1,12 @@
+// HEADER
+
+
+.header {
+    background: $color-palette-1;
+    background: linear-gradient(180deg, $color-palette-1 0%, $color-palette-1 95%, $color-palette-2 100%);
+    position: sticky;
+        top: 0;
+    z-index: 3; // Para estár incluso sobre los botones del carrusel
+
+    @import "./header__navbar";
+}

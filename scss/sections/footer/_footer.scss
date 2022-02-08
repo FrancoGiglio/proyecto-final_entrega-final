@@ -1,0 +1,15 @@
+// FOOTER
+
+
+.footer {
+    background: $color-palette-1;
+    background: linear-gradient(0deg, $color-palette-1 0%, $color-palette-1 75%, $color-palette-2 100%);
+
+    // =====
+
+    // Redes sociales
+    @import "./footer__social-media";
+
+    // Legales
+    @import "./footer__legal";
+}

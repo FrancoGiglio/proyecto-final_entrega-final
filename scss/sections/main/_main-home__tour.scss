@@ -1,0 +1,16 @@
+// MAIN DE LA PÁGINA WEB DE INICIO
+
+
+// Tour
+.main-home__tour {
+
+    .main-home__tour--body {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        .main-home__tour--body-image {
+            display: none;
+        }
+    }
+}

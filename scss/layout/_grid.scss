@@ -1,0 +1,96 @@
+// DISEÑO BASE
+
+
+.general-grid {
+    display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto); // VER si conviene "1fr" o "auto" <<<
+        gap: 20px 0px;
+        grid-auto-flow: column;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+        ;
+
+    .header {
+        grid-area: header;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .main-home {
+        display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, auto); // VER si conviene "1fr" o "auto" <<<
+            gap: 30px 0px;
+            grid-auto-flow: column;
+            grid-template-areas:
+                "main-home__carousel"
+                "main-home__short-news"
+                "main-home__tour"
+            ;
+
+        .main-home__carousel {
+            grid-area: main-home__carousel;
+        }
+
+        .main-home__short-news {
+            grid-area: main-home__short-news;
+        }
+
+        .main-home__tour {
+            grid-area: main-home__tour;
+                justify-self: center;
+        }
+    }
+
+    .main-media {
+        display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, auto); // VER si conviene "1fr" o "auto" <<<
+            gap: 30px 0px;
+            grid-auto-flow: column;
+            grid-template-areas:
+                "main-media__new-videos"
+                "main-media__new-photos"
+            ;
+
+        .main-media__new-videos {
+            grid-area: main-media__new-videos;
+                justify-self: center;
+        }
+
+        .main-media__new-photos {
+            grid-area: main-media__new-photos;
+                justify-self: center;
+        }
+    }
+
+    .footer {
+        grid-area: footer;
+        display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, auto); // VER si conviene "1fr" o "auto" <<<
+            gap: 10px 0px;
+            grid-auto-flow: column;
+            grid-template-areas:
+                "footer__social-media"
+                "footer__legal"
+            ;
+
+        .footer__social-media {
+            grid-area: footer__social-media;
+                justify-self: center;
+                align-self: center;
+        }
+
+        .footer__legal {
+            grid-area: footer__legal;
+                justify-self: center;
+                align-self: center;
+        }
+    }
+}

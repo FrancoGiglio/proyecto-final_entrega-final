@@ -1,0 +1,53 @@
+// MAIN DE LA PÁGINA WEB DE BIOGRAFÍA
+
+
+.main-biography {
+
+    .main-biography__about {
+
+        // Declaro un mixin sin variables
+        @mixin styles__background-and-borders {
+            background-color: $color-palette-3; // Esta no es una variable creada para este mixin específico (aquí funciona como un dato fijo), es una variable creada en el archivo _vars__color-palette.scss
+            border-right: 10px inset $color-palette-5; // Esta no es una variable creada para este mixin específico (aquí funciona como un dato fijo), es una variable creada en el archivo _vars__color-palette.scss
+            border-left: 10px inset $color-palette-5; // Esta no es una variable creada para este mixin específico (aquí funciona como un dato fijo), es una variable creada en el archivo _vars__color-palette.scss
+        }
+
+        .abstract {
+            margin: 10px 0 0 0;
+            @include styles__background-and-borders; // Aplico el mixin sin variables
+            border-top: 10px inset $color-palette-5;
+
+            .abstract__title {
+                margin: 20px 0 0 20px;
+            }
+
+            .abstract__content {
+                padding: 20px;
+
+                .abstract__video {
+                    margin: 0 0 20px 0;
+                    width: 100%; // Respecto de su caja padre
+                }
+            }
+        }
+
+        .personal-life {
+            @include styles__background-and-borders; // Aplico el mixin sin variables
+            border-bottom: 10px inset $color-palette-5;
+
+            .personal-life__title {
+                margin: 0 0 0 20px;
+                color: $color-palette-1;
+            }
+
+            .personal-life__content {
+                padding: 20px;
+
+                .personal-life__image {
+                    margin: 0 0 20px 0;
+                    width: 100%; // Respecto de su caja padre
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+// MAIN DE LA PÁGINA WEB DE MEDIA
+
+
+.main-media {
+
+    // =====
+
+    // Nuevos videos
+    @import "./main-media__new-videos";
+
+    // Nuevas fotos
+    @import "./main-media__new-photos";
+}

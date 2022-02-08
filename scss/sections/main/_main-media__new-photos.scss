@@ -1,0 +1,28 @@
+// MAIN DE LA PÁGINA WEB DE MEDIA
+
+
+// Nuevas fotos
+.main-media__new-photos {
+
+    .main-media__new-photos--image-gallery {
+        display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+        img {
+            margin: 20px;
+            width: 300px;
+            opacity: .75;
+            border: 5px solid $color-palette-4;
+            transition: all 1s;
+
+            &:hover {
+                opacity: 1;
+                border: 5px inset $color-palette-5;
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+}

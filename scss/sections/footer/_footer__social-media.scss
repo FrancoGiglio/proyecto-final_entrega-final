@@ -1,0 +1,21 @@
+// FOOTER
+
+
+// Redes sociales
+.footer__social-media {
+    padding: 50px 0 0 0;
+
+    .footer__social-media--unordered-list {
+        list-style-type: none;
+        display: flex;
+            justify-content: center;
+
+        .footer__social-media--unordered-list-item {
+            margin: 7.5px;
+
+            .footer__social-media--unordered-list-item-link .footer__social-media--unordered-list-item-link-icon {
+                width: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+// MAIN DE LA PÁGINA WEB DE MÚSICA
+
+
+.main-music {
+
+    .main-music__discography {
+
+        // Álbumes de estudio
+        .studio-albums {
+
+            .studio-albums__card {
+                padding: 10px 20px;
+                margin: 10px 20px 20px 20px;
+                background-color: $color-palette-3;
+                border: 10px inset $color-palette-5;
+
+                .studio-albums__card--title {
+                    padding: 0 0 20px 0;
+                }
+
+                .studio-albums__card--top {
+                    margin: 0 0 10px 0;
+                    display: flex;
+                        align-items: flex-start;
+                }
+            }
+        }
+    }
+}

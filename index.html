@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Página en español -->
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Prompt:ital,wght@1,700&family=Yellowtail&display=swap" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- wow.js (Enlace a la biblioteca de animación CSS) -->
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="./css/styles.css"> <!-- Enlace LOCAL -->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/icons/favicon/favicon.ico" type="image/x-icon"> <!-- Enlace LOCAL -->
+
+    <!-- S.E.O. --> <!-- Diferente en TODAS las páginas del sitio web -->
+    <title>
+        John Mayer – Todo lo que necesitas saber de tu artista favorito
+    </title>
+    <meta name="description" content="Bienvenidos a este sitio web en honor a John Mayer, entérate de las últimas noticias, averigua las fechas de su próximo Tour 2022 y explora el mundo de tu artista favorito.">
+    <meta name="keywords" content="John, Clayton, Mayer, John Mayer, John Clayton Mayer, artista, cantante, compositor, productor, noticias, actualidad, tour, Adele, Sob Rock">
+
+</head>
+
+
+
+<body>
+
+
+    <div class="general-grid">
+
+
+    <!-- ========================= -->
+
+
+        <header class="header">
+
+            <!-- Navegador de la página -->
+            <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Elimino la/s clase/s de Bootstrap: bg-light --> <!-- Reemplazo la clase de Bootstrap "navbar-light" por "navbar-dark" para que las letras sean blancas por defecto -->
+
+                <div class="container-fluid"> <!-- width: 100% en todos los breakpoints -->
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="./index.html"> <!-- Enlace LOCAL -->
+                        <h1 class="wow animate__animated animate__pulse animate__repeat-2" data-wow-duration="2s" data-wow-delay="2s"> <!-- "animate__repeat-2" es una class de Animate.css // "data-wow-duration" y "data-wow-delay" son atributos de wow.js -->
+                            John Mayer
+                        </h1>
+                    </a>
+
+                    <!-- Botón hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menú y Tienda -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <!-- Menú -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header-navbar__menu"> <!-- Reemplazo la clase de Bootstrap "me-auto" por "ms-auto" para que el Menú quede al medio -->
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link active header-navbar__menu--item-link" aria-current="page" href="./index.html"> <!-- Enlace LOCAL --> <!-- Enlace ACTIVO -->
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="./pages/biography.html"> <!-- Enlace LOCAL -->
+                                    Biografía
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="./pages/music.html"> <!-- Enlace LOCAL -->
+                                    Música
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="./pages/media.html"> <!-- Enlace LOCAL -->
+                                    Media
+                                </a>
+                            </li>
+                            <li class="nav-item header-navbar__menu--item">
+                                <a class="nav-link header-navbar__menu--item-link" href="./pages/contact.html"> <!-- Enlace LOCAL -->
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Tienda -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 header-navbar__shop"> <!-- Puesto como "Lista desordenada" por si en el futuro se quiere agregar otro botón a un enlace externo --> <!-- Reemplazo la clase de Bootstrap "me-auto" por "ms-auto" para que la Tienda quede pegada al margen derecho -->
+                            <li class="nav-item header-navbar__shop--item">
+                                <a class="nav-link header-navbar__shop--item-link" href="https://johnmayerstore.com/" target="_blank">
+                                    Tienda
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <!-- ========== -->
+
+
+        <!-- Página principal (Index) // Inicio -->
+        <main class="main main-home">
+
+            <!-- Carrusel de imágenes -->
+            <section id="carouselExampleCaptions" class="carousel slide main-home__carousel" data-bs-ride="carousel"> <!-- El ID de Bootstrap "carouselExampleCaptions" hace que funcionen los botones -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/images/carousel/john-mayer.jpg" class="d-block w-100" alt="John Mayer">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-caption__glow">
+                                John Mayer
+                            </h5>
+                            <p class="carousel-caption__glow">
+                                John Clayton Mayer, es un cantante, compositor y productor discográfico.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/carousel/john-mayer_last-train-home.jpg" class="d-block w-100" alt="John Mayer – Last Train Home">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-caption__glow">
+                                John Mayer – Last Train Home
+                            </h5>
+                            <p class="carousel-caption__glow">
+                                Mira el video oficial en <a class="youtube__link" href="https://youtu.be/66Ne5dVDfLM" target="_blank">YouTube</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/carousel/john-mayer_maren-morris.jpg" class="d-block w-100" alt="John Mayer & Maren Morris">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-caption__glow">
+                                Grammys 2021
+                            </h5>
+                            <p class="carousel-caption__glow">
+                                'The Bones' fue interpretada por Maren Morris con la guitarra de John Mayer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">
+                        Anterior
+                    </span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">
+                        Siguiente
+                    </span>
+                </button>
+            </section>
+
+            <!-- Noticias cortas -->
+            <section class="container-fluid main-home__short-news">
+
+                <h2 class="main-home__short-news--title wow animate__animated animate__fadeInUp">
+                    Lo último
+                </h2>
+
+                <div class="main-home__short-news--articles">
+
+                    <article class="card"> <!-- Elimino el/los atributo/s establecido/s por Bootstrap: style="width: 18rem;" -->
+                        <img src="./assets/images/short-news/john-mayer_adele.jpg" class="card-img-top" alt="Adele entrevistada por John">
+                        <div class="card-body">
+                            <h6 class="card__date">
+                                18 de noviembre del 2021
+                            </h6>
+                            <h3 class="card-title"> <!-- Reemplazo el h5 de Bootstrap por un h3 para que tome el CSS configurado para ese heading -->
+                                Adele entrevistada por John
+                            </h3>
+                            <p class="card-text">
+                                John Mayer le preguntó a Adele si creía que él debía casarse. La reina de las canciones de amor, pese a estar divorciada le respondió: “Oh, sí. Deberías casarte. Sí. Creo que el matrimonio es algo realmente increíble. Sé que algunas personas probablemente piensan que yo no pensaría eso, ya sabes, como si me hubiera rendido. Pero sí, creo que deberías”. Ante estas palabras John, uno de los solteros más codiciados, emocionado dijo “Awww. Me voy a casar uno de estos días” y recordó que una esposa e hijos completaban su lista de deseos.
+                                ¿El corazón de John Mayer tendrá dueña o todavía quedan esperanzas para conquistarlo?
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card"> <!-- Elimino el/los atributo/s establecido/s por Bootstrap: style="width: 18rem;" -->
+                        <img src="./assets/images/short-news/john-mayer_sob-rock.jpg" class="card-img-top" alt="'Sob Rock': El nuevo disco">
+                        <div class="card-body">
+                            <h6 class="card__date">
+                                16 de julio del 2021
+                            </h6>
+                            <h3 class="card-title"> <!-- Reemplazo el h5 de Bootstrap por un h3 para que tome el CSS configurado para ese heading -->
+                                'Sob Rock': El nuevo disco
+                            </h3>
+                            <p class="card-text">
+                                Sob Rock, lanzado el 16 de julio de 2021, es el octavo disco de John Mayer. Aunque se hizo esperar 3 meses, fue recibido con gran alegría por todos los fans. La primera canción «Last Train Home» ya sonaba desde marzo en las redes sociales a través de la plataforma TikTok, esto provocó gran ansiedad por el disco en el público. Con él, una vez más, el cantante estadounidense ha demostrado su gran capacidad compositiva que lo ubica como uno de los guitarristas más influyentes y versados de la actualidad.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card"> <!-- Elimino el/los atributo/s establecido/s por Bootstrap: style="width: 18rem;" -->
+                        <img src="./assets/images/short-news/john-mayer_official-video.jpg" class="card-img-top" alt="Portada del video oficial del nuevo sencillo">
+                        <div class="card-body">
+                            <h6 class="card__date">
+                                04 de junio del 2021
+                            </h6>
+                            <h3 class="card-title"> <!-- Reemplazo el h5 de Bootstrap por un h3 para que tome el CSS configurado para ese heading -->
+                                Nuevo sencillo y video
+                            </h3>
+                            <p class="card-text">
+                                Con un reconocido estilo de los 80, el videoclip de «Last Train Home» arrasa con todo.
+                                En este sencillo escuchamos a Mayer canalizar a personas como Bryan Adams, Kenny Loggins, Michael McDonald y Toto, por lo que no es de extrañar que se unieran el percusionista de Toto, Lenny Castro y al tecladista Greg Phillinganes.
+                                El video de la canción fue dirigido por Cameron Duddy y Harper Smith está filmado como una mirada detrás de escena en un ensayo, con Mayer siendo seguido por todo el set por una fotógrafa. La escenografía, el vestuario y la performance nos hacen revivir la dorada década de los 80 en pleno siglo XXI.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Tour -->
+            <section class="main-home__tour">
+
+                <h2 class="main-home__tour--title wow animate__animated animate__flash">
+                    Tour 2022
+                </h2>
+
+                <div class="main-home__tour--body">
+                    <img class="main-home__tour--body-image" src="./assets/images/tour/tour_2022.jpg" alt="Tour 2022"> <!-- Enlace LOCAL -->
+
+                    <a class="main-home__tour--body-download-button" href="download/tour_2022.jpg" download="John Mayer – Tour 2022.jpg">
+                        <img class="main-home__tour--body-download-button-icon" src="./assets/icons/tour/download.svg" alt="Download – Tour 2022"> <!-- Enlace LOCAL -->
+                    </a>
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ========== -->
+
+
+        <!-- Pie de página -->
+        <footer class="footer">
+
+            <!-- Redes sociales -->
+            <div class="footer__social-media">
+                <ul class="footer__social-media--unordered-list">
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.facebook.com/johnmayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="./assets/icons/social-media/facebook.svg" alt="Facebook"> <!-- Enlace LOCAL -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://twitter.com/johnmayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="./assets/icons/social-media/twitter.svg" alt="Twitter"> <!-- Enlace LOCAL -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.instagram.com/johnmayer/" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="./assets/icons/social-media/instagram.svg" alt="Instagram"> <!-- Enlace LOCAL -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.tiktok.com/@johnmayer?" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="./assets/icons/social-media/tiktok.svg" alt="TikTok"> <!-- Enlace LOCAL -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://www.youtube.com/johnmayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="./assets/icons/social-media/youtube.svg" alt="YouTube"> <!-- Enlace LOCAL -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://open.spotify.com/artist/0hEurMDQu99nJRq8pTxO14" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="./assets/icons/social-media/spotify.svg" alt="Spotify"> <!-- Enlace LOCAL -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://music.apple.com/us/artist/john-mayer/472054" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="./assets/icons/social-media/apple-music.svg" alt="Apple Music"> <!-- Enlace LOCAL -->
+                        </a>
+                    </li>
+                    <li class="footer__social-media--unordered-list-item">
+                        <a class="footer__social-media--unordered-list-item-link" href="https://music.amazon.com/artists/B000QJJQJQ/john-mayer" target="_blank">
+                            <img class="footer__social-media--unordered-list-item-link-icon wow animate__animated animate__flip" src="./assets/icons/social-media/amazon-music.svg" alt="Amazon Music"> <!-- Enlace LOCAL -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Legales -->
+            <div class="footer__legal">
+                <p>
+                    ©2021 John Mayer. Esta página es un Concept. Todos los derechos son propiedad de John Mayer.
+                </p>
+            </div>
+
+        </footer>
+
+
+    <!-- ========================= -->
+
+
+    </div>
+
+
+    <!-- ================================================== -->
+
+
+    <!-- wow.js (Vinculación y activación) -->
+    <script src="./js/wow.min.js"></script> <!-- Enlace LOCAL -->
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- Popper y Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,40 @@
+// ESTILO BASE
+
+
+// Declaro un mixin con variables
+@mixin heading-level__font-and-color($font-size, $color) {
+    font-family: $font-family__title; // Esta no es una variable creada para este mixin específico (aquí funciona como un dato fijo), es una variable creada en el archivo _vars__font-family.scss
+    font-size: $font-size;
+    color: $color;
+}
+
+// Declaro un mixin con variable
+@mixin heading-level__text($text-shadow__color) {
+    text-transform: uppercase;
+    text-shadow: 0.25rem 0.25rem 0 $text-shadow__color; // desplazamiento-x | desplazamiento-y | radio de desenfoque | color
+    text-align: center;
+}
+
+body {
+    font-family: $font-family__body;
+    background-color: $color-palette-2;
+
+    h1 {
+        @include heading-level__font-and-color($font-size__h1, #ffffff); // Aplico el mixin con variables
+        @include heading-level__text($color-palette-3); // Aplico el mixin con variable
+    }
+
+    h2 {
+        @include heading-level__font-and-color($font-size__h2, $color-palette-3); // Aplico el mixin con variables
+        @include heading-level__text($color-palette-6); // Aplico el mixin con variable
+    }
+
+    h3 {
+        @include heading-level__font-and-color($font-size__h3, $color-palette-1); // Aplico el mixin con variables
+    }
+
+    p {
+        text-align: justify;
+        line-height: 1.6; // Valores sin unidades: usa esta cifra multiplicada por el tamaño de fuente del elemento
+    }
+}
